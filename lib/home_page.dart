@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class HomePage extends StatelessWidget {
   final List<String> stopwatchHistory = [
@@ -12,17 +13,16 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-  title: Text("Simple Stopwatch"),
-  actions: [
-    IconButton(
-      icon: Icon(Icons.info_outline),
-      onPressed: () {
-        Navigator.pushNamed(context, '/about');
-      },
-    ),
-  ],
-),
-
+        title: Text("Simple Stopwatch"),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.info_outline),
+            onPressed: () {
+              Navigator.pushNamed(context, '/about');
+            },
+          ),
+        ],
+      ),
       body: OrientationBuilder(
         builder: (context, orientation) {
           return LayoutBuilder(
@@ -38,6 +38,20 @@ class HomePage extends StatelessWidget {
                         fontSize: screenSize.width > 600 ? 28 : 20,
                         fontWeight: FontWeight.bold,
                       ),
+                    ),
+                    SizedBox(height: 10),
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/interactive');
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.white,
+                        foregroundColor: Colors.deepPurple,
+                        shape: StadiumBorder(),
+                        elevation: 2,
+                        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                      ),
+                      child: Text(AppLocalizations.of(context)!.goToInteractivePage),
                     ),
                     SizedBox(height: 10),
                     Expanded(

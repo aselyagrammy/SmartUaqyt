@@ -1,0 +1,8 @@
+{
+  "@@locale": "en",
+  "interactivePageTitle": "Fun Page",
+  "goToInteractivePage": "Go to Fun Page",
+  "greeting": "Welcome to SmartUaqyt!",
+  "longPressedMessage": "You've long pressed! 👆",
+  "hidden": "Hidden 👀"
+}
