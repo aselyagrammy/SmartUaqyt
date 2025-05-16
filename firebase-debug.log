@@ -1,0 +1,22 @@
+[debug] [2025-05-08T21:24:50.913Z] ----------------------------------------------------------------------
+[debug] [2025-05-08T21:24:50.915Z] Command:       /opt/homebrew/Cellar/node/23.11.0/bin/node /opt/homebrew/bin/firebase projects:create smart7 --json
+[debug] [2025-05-08T21:24:50.915Z] CLI Version:   14.2.2
+[debug] [2025-05-08T21:24:50.915Z] Platform:      darwin
+[debug] [2025-05-08T21:24:50.915Z] Node Version:  v23.11.0
+[debug] [2025-05-08T21:24:50.915Z] Time:          Fri May 09 2025 02:24:50 GMT+0500 (Kazakhstan Time)
+[debug] [2025-05-08T21:24:50.915Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-08T21:24:50.917Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-08T21:24:50.917Z] > authorizing via signed-in user (osqarstar@gmail.com)
+[debug] [2025-05-08T21:24:50.918Z] Checked if tokens are valid: true, expires at: 1746743078653
+[debug] [2025-05-08T21:24:50.918Z] Checked if tokens are valid: true, expires at: 1746743078653
+[debug] [2025-05-08T21:24:50.918Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-05-08T21:24:50.918Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"smart7","name":"smart7"}
+[debug] [2025-05-08T21:24:52.003Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2025-05-08T21:24:52.003Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2025-05-08T21:24:52.257Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 409, Requested entity already exists
+    at responseToError (/opt/homebrew/Cellar/firebase-cli/14.2.2/libexec/lib/node_modules/firebase-tools/lib/responseToError.js:52:12)
+    at RetryOperation._fn (/opt/homebrew/Cellar/firebase-cli/14.2.2/libexec/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID smart7. Please try again with a unique project ID.

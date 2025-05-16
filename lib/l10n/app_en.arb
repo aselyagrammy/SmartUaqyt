@@ -1,8 +1,28 @@
 {
   "@@locale": "en",
+  "appTitle": "SmartUaqyt",
+  "home": "Home",
+  "about": "About",
+
   "interactivePageTitle": "Fun Page",
   "goToInteractivePage": "Go to Fun Page",
   "greeting": "Welcome to SmartUaqyt!",
   "longPressedMessage": "You've long pressed! 👆",
-  "hidden": "Hidden 👀"
+  "hidden": "Hidden 👀",
+
+  "recentTimings": "Recent Timings",
+  "session": "Session",
+  "timeLabel": "Time",
+
+  "settingsPageTitle": "Settings",
+  "themeLabel": "Theme",
+  "languageLabel": "Language",
+  "lightTheme": "Light",
+  "darkTheme": "Dark",
+  "systemTheme": "System",
+
+  "appDescriptionTitle": "App Description",
+  "appDescription": "Simple Stopwatch is a lightweight and easy-to-use timing app that allows users to measure time precisely. With its intuitive interface, users can start, stop, and reset the stopwatch with just one tap. Ideal for timing workouts, studying, or any activity where tracking time matters.",
+  "creditsTitle": "Credits",
+  "credits": "Developed by Askar, Alimzhan, Aselya in the scope of the course “Cross-platform Development” at Astana IT University.\nMentor (Teacher): Assistant Professor Abzal Kyzyrkanov"
 }

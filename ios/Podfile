@@ -1,0 +1,55 @@
+# ios/Podfile
+
+platform :ios, '12.0'
+ENV['COCOAPODS_DISABLE_STATS'] = 'true'
+
+project 'Runner', {
+  'Debug'   => :debug,
+  'Profile' => :release,
+  'Release' => :release,
+}
+
+def flutter_root
+  generated_xcconfig = File.expand_path('Flutter/Generated.xcconfig', __dir__)
+  unless File.exist?(generated_xcconfig)
+    raise "#{generated_xcconfig} not found. Run `flutter pub get` first"
+  end
+  File.foreach(generated_xcconfig) do |line|
+    return $1.strip if line =~ /FLUTTER_ROOT\=(.*)/
+  end
+  raise "FLUTTER_ROOT not defined in #{generated_xcconfig}"
+end
+
+require File.expand_path('packages/flutter_tools/bin/podhelper', flutter_root)
+
+flutter_ios_podfile_setup
+
+target 'Runner' do
+  # use_frameworks!  # <— you can remove or comment this out if you added it
+  flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
+end
+
+target 'RunnerTests' do
+  inherit! :search_paths
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    # re-apply Flutter defaults
+    flutter_additional_ios_build_settings(target)
+
+    # scrub any "-G" flags
+    target.build_configurations.each do |config|
+      %w[
+        OTHER_CFLAGS
+        OTHER_CPLUSPLUSFLAGS
+        OTHER_LDFLAGS
+        OTHER_SWIFT_FLAGS
+      ].each do |flag|
+        next unless config.build_settings[flag]
+        config.build_settings[flag] =
+          config.build_settings[flag].gsub(/\-G/, '')
+      end
+    end
+  end
+end

@@ -1,36 +1,69 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class AboutPage extends StatelessWidget {
+  const AboutPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
+    final loc = AppLocalizations.of(context)!;
+
     return Scaffold(
-      appBar: AppBar(
-        title: Text("About"),
+      // ─────────────── Drawer ───────────────
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              child: Text(
+                loc.appTitle,
+                style: const TextStyle(fontSize: 24),
+              ),
+            ),
+            ListTile(
+              leading: const Icon(Icons.home),
+              title: Text(loc.home),
+              onTap: () => Navigator.pushReplacementNamed(context, '/home'),
+            ),
+            ListTile(
+              leading: const Icon(Icons.info_outline),
+              title: Text(loc.about),
+              onTap: () => Navigator.pop(context), // already here
+            ),
+            ListTile(
+              leading: const Icon(Icons.tune),
+              title: Text(loc.settingsPageTitle),
+              onTap: () => Navigator.pushReplacementNamed(context, '/settings'),
+            ),
+          ],
+        ),
       ),
+
+      appBar: AppBar(title: Text(loc.about)),
+
       body: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "App Description",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              loc.appDescriptionTitle,
+              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Text(
-              "Simple Stopwatch is a lightweight and easy-to-use timing app that allows users to measure time precisely. With its intuitive interface, users can start, stop, and reset the stopwatch with just one tap. Ideal for timing workouts, studying, or any activity where tracking time matters.",
-              style: TextStyle(fontSize: 16),
+              loc.appDescription,
+              style: const TextStyle(fontSize: 16),
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
             Text(
-              "Credits",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              loc.creditsTitle,
+              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Text(
-              "Developed by Askar,Alimzhan, Aselya in the scope of the course “Crossplatform Development” at Astana IT University.\n"
-              "Mentor (Teacher): Assistant Professor Abzal Kyzyrkanov",
-              style: TextStyle(fontSize: 16),
+              loc.credits,
+              style: const TextStyle(fontSize: 16),
             ),
           ],
         ),
