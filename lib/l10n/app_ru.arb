@@ -13,6 +13,7 @@
   "recentTimings": "Последние замеры",
   "session": "Сеанс",
   "timeLabel": "Время",
+  "offlineBanner": "Вы не в сети. Некоторые функции могут быть ограничены.",
 
   "settingsPageTitle": "Настройки",
   "themeLabel": "Тема",
@@ -25,5 +26,22 @@
   "appDescription": "Simple Stopwatch — это лёгкое и простое в использовании приложение для измерения времени, позволяющее пользователям точно отслеживать время. Благодаря интуитивному интерфейсу пользователь может запускать, останавливать и сбрасывать секундомер одним нажатием. Идеально подходит для тренировок, учебы или любых действий, где важен контроль времени.",
 
   "creditsTitle": "Кредиты",
-  "credits": "Разработано Askar, Alimzhan, Aselya в рамках курса «Кросс-платформенная разработка» в Astana IT University.\nНаставник (преподаватель): доцент Абзал Кызырканов"
+  "credits": "Разработано Askar, Alimzhan, Aselya в рамках курса «Кросс-платформенная разработка» в Astana IT University.\nНаставник (преподаватель): доцент Абзал Кызырканов",
+
+  "guestNotice": "Вы в гостевом режиме. Некоторые функции ограничены.",
+  "guestNoticeDescription": "Уведомление, показываемое, когда пользователь в гостевом режиме",
+
+  "profilePageTitle": "Профиль",
+  "emailLabel": "Электронная почта",
+  "timerSessionsLabel": "Сессии таймера",
+  "recordedSessionsCount": "Записано: {count}",
+  "preferencesLabel": "Настройки",
+  "themeLightLabel": "Светлая",
+  "themeDarkLabel": "Тёмная",
+  "themeSystemLabel": "Системная",
+  "languageEnglish": "English",
+  "languageRussian": "Русский",
+  "languageKazakh": "Қазақ тілі",
+  "logoutButton": "Выйти",
+  "logoutErrorMessage": "Ошибка при выходе: {error}"
 }

@@ -13,6 +13,7 @@
   "recentTimings": "Соңғы уақыттар",
   "session": "Сеанс",
   "timeLabel": "Уақыт",
+  "offlineBanner": "Сіз желіден тыссыз. Кейбір мүмкіндіктер шектеулі болуы мүмкін.",
 
   "settingsPageTitle": "Параметрлер",
   "themeLabel": "Тақырып",
@@ -25,5 +26,23 @@
   "appDescription": "Simple Stopwatch — жеңіл әрі қолдануға оңай уақыт өлшегіш қосымша, ол пайдаланушыларға уақытты дәл өлшеуге мүмкіндік береді. Интуитивті интерфейс арқылы секундомерді бір басу арқылы іске қосып, тоқтатып және қайта орнатуға болады. Бұл жаттығуларға, оқуға немесе уақытты бақылау қажет кез келген әрекеттерге өте қолайлы.",
 
   "creditsTitle": "Авторлар",
-  "credits": "Askar, Alimzhan, Aselya әзірлеген, Astana IT University-де «Кросс-платформалық даму» курсы аясында.\nМентор (оқытушы): доцент Абзал Қызырканов"
+  "credits": "Askar, Alimzhan, Aselya әзірлеген, Astana IT University-де «Кросс-платформалық даму» курсы аясында.\nМентор (оқытушы): доцент Абзал Қызырканов",
+  
+  "guestNotice": "Сіз қонақ режимінде. Кейбір функциялар шектеулі.",
+
+  "guestNoticeDescription": "Пайдаланушы қонақ ретінде кірген кезде көрсетілетін ескерту",
+
+  "profilePageTitle": "Профиль",
+  "emailLabel": "Электрондық пошта",
+  "timerSessionsLabel": "Таймер сессиялары",
+  "recordedSessionsCount": "Жазылған: {count}",
+  "preferencesLabel": "Параметрлер",
+  "themeLightLabel": "Ашық",
+  "themeDarkLabel": "Қараңғы",
+  "themeSystemLabel": "Жүйелік",
+  "languageEnglish": "English",
+  "languageRussian": "Русский",
+  "languageKazakh": "Қазақ тілі",
+  "logoutButton": "Шығу",
+  "logoutErrorMessage": "Шығу кезінде қате: {error}"
 }

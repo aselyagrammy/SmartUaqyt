@@ -13,6 +13,7 @@
   "recentTimings": "Recent Timings",
   "session": "Session",
   "timeLabel": "Time",
+  "offlineBanner": "You are offline. Some features may be limited.",
 
   "settingsPageTitle": "Settings",
   "themeLabel": "Theme",
@@ -23,6 +24,38 @@
 
   "appDescriptionTitle": "App Description",
   "appDescription": "Simple Stopwatch is a lightweight and easy-to-use timing app that allows users to measure time precisely. With its intuitive interface, users can start, stop, and reset the stopwatch with just one tap. Ideal for timing workouts, studying, or any activity where tracking time matters.",
+  
   "creditsTitle": "Credits",
-  "credits": "Developed by Askar, Alimzhan, Aselya in the scope of the course “Cross-platform Development” at Astana IT University.\nMentor (Teacher): Assistant Professor Abzal Kyzyrkanov"
+  "credits": "Developed by Askar, Alimzhan, Aselya in the scope of the course \"Cross-platform Development\" at Astana IT University.\nMentor (Teacher): Assistant Professor Abzal Kyzyrkanov",
+
+  "guestNotice": "You are in guest mode. Some features are limited.",
+  "guestNoticeDescription": "Notice shown when the user is a guest",
+
+  "profilePageTitle": "Profile",
+  "emailLabel": "Email",
+  "timerSessionsLabel": "Timer Sessions",
+  "@recordedSessionsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recordedSessionsCount": "{count} recorded",
+  "preferencesLabel": "Preferences",
+  "themeLightLabel": "Light",
+  "themeDarkLabel": "Dark",
+  "themeSystemLabel": "System",
+  "languageEnglish": "English",
+  "languageRussian": "Русский",
+  "languageKazakh": "Қазақ тілі",
+  "logoutButton": "Logout",
+  "@logoutErrorMessage": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "logoutErrorMessage": "Error logging out: {error}"
 }
